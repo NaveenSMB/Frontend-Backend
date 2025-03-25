@@ -5,7 +5,7 @@ pipeline {
         stage('Clean Up Docker') {
             steps {
                 sh '''
-                docker system prune -af  # Remove all unused Docker containers & images
+                docker system prune -af  
                 '''
             }
         }
