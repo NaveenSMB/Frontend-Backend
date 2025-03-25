@@ -12,7 +12,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-repo/simple-docker-project.git'  
+                git credentialsId: 'github-credentials', url: 'https://github.com/NaveenSMB/Frontend-Backend.git', branch: 'main'
             }
         }
 
