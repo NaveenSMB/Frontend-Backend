@@ -12,7 +12,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-repo/simple-docker-project.git'  # Clone the repository
+                git 'https://github.com/your-repo/simple-docker-project.git'  
             }
         }
 
