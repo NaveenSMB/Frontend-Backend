@@ -1,11 +1,11 @@
-from flask import Flask, jsonify  # Import Flask and jsonify (for JSON responses)
+from flask import Flask, jsonify  
 
-app = Flask(__name__)  # Create a Flask web application
+app = Flask(__name__)  
 
-@app.route('/health')  # Define an endpoint `/health`
+@app.route('/health')  
 def health():
-    return jsonify({"message": "Backend is running!"})  # Return a JSON response
+    return jsonify({"message": "Backend is running!"})  
 
-if __name__ == '__main__':  # Run the app only if this script is executed directly
-    app.run(host='0.0.0.0', port=5000)  # Start the Flask server on port 5000
+if __name__ == '__main__':  
+    app.run(host='0.0.0.0', port=5000)  
 
